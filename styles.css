@@ -148,7 +148,7 @@ ion-icon {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 330px) {
     h1 {
         font-size: 18px;
     }
