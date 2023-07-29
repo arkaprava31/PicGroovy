@@ -114,6 +114,9 @@ ion-icon {
     h1 {
         margin-bottom: 6%;
     }
+    #sresult {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 650px) {
@@ -121,11 +124,45 @@ ion-icon {
         font-size: 30px;
         margin-bottom: 6%;
     }
+    #sresult {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 500px) {
     h1 {
         font-size: 25px;
         margin-bottom: 8%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+    form {
+        height: 35px;
+    }
+    #sresult img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 18px;
+    }
+    form {
+        height: 32px;
+        width: 80%;
+    }
+    form input{
+        font-size: 13px;
+    }
+    form button{
+        width: 35px;
+    }
+    #sresult img {
+        height: 150px;
     }
 }
