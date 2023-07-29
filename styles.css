@@ -14,10 +14,14 @@ h1 {
     text-align: center;
     margin: 5% auto 2%;
     font-weight: 600;
-    -webkit-text-stroke: 0.5px black;
+    margin-bottom: 3%;
 }
 
-form{
+h1 span {
+    color: #FF3929;
+}
+
+form {
     width: 90%;
     max-width: 600px;
     height: 50px;
@@ -27,7 +31,8 @@ form{
     align-items: center;
     border-radius: 10px;
 }
-form input{
+
+form input {
     flex: 1;
     font-size: 15px;
     background: transparent;
@@ -36,7 +41,8 @@ form input{
     border: 0;
     padding: 0 30px;
 }
-form button{
+
+form button {
     width: 50px;
     border-radius: 8px;
     border: 0;
@@ -45,16 +51,18 @@ form button{
     color: white;
     cursor: pointer;
 }
-ion-icon{
+
+ion-icon {
     font-size: 23px;
     --ionicon-stroke-width: 40px;
 }
-::placeholder{
+
+::placeholder {
     color: #fff;
     font-size: 15px;
 }
 
-#more{
+#more {
     font-size: 15px;
     border-radius: 4px;
     margin: 10px auto 5%;
@@ -66,24 +74,26 @@ ion-icon{
     display: none;
 }
 
-#sresult{
+#sresult {
     width: 80%;
     margin: 100px auto 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
 }
-#sresult img{
+
+#sresult img {
     width: 100%;
     height: 230px;
     object-fit: cover;
-    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
     background-color: #ebebeb;
     -webkit-border-radius: 10px;
@@ -93,5 +103,29 @@ ion-icon{
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #FF7B54; 
+    background: #FF7B54;
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 70%;
+    }
+
+    h1 {
+        margin-bottom: 6%;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 6%;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+        margin-bottom: 8%;
+    }
 }
